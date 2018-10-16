@@ -3,5 +3,6 @@ steps:
     env: ['TAG_NAME=${TAG_NAME}', 'SHORT_SHA=${SHORT_SHA}']
     entrypoint: 'env'
   - name: 'gcr.io/cloud-builders/git'
+    env: ['TAG_NAME=${TAG_NAME}', 'SHORT_SHA=${SHORT_SHA}']
     entrypoint: '/workspace/main.sh'
 
