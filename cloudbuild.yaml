@@ -1,0 +1,6 @@
+steps:
+  - name: 'gcr.io/cloud-builders/git'
+    entrypoint: 'env'
+  - name: 'gcr.io/cloud-builders/git'
+    entrypoint: '/workspace/main.sh'
+
